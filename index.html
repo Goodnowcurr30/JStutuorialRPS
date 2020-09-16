@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>JavaScript with Clever programmer</title>
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container-1">
+            <div class="flex-box-conntainer-1">
+                <h1>Hello World</h1>
+                <h2>JavaScript tutorial</h2>
+                <p>Introduction to JavaScript</p>
+            </div>
+
+            <div class="flex-box-container-1">
+                <a href="challenge.html"><button class="btn btn-primary">challenge</button></a>
+            </div>
+        </div>
+
+
+        <script>
+            let student = `[
+                {
+                    "name": "Goodnow",
+                    "age": 20,
+                    "height": 150
+                },
+                {
+                    "name": "Curry",
+                    "age": 30,
+                    "height": 160
+                },
+                {
+                    "name": "Lucas",
+                    "age": 24,
+                    "height": 140
+                }
+            ]`
+            console.log(JSON.parse(student)[2].name);
+        </script>
+        <!--<script src="js/main.js"></script>-->
+        <script src="js/challenge.js"></script>
+    </body>
+</html>

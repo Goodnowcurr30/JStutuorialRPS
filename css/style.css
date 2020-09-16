@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: url("/blackjack_assets/images/cat.jpg");
+    background-size: cover;
+}
+
+section {
+    margin: 5% 0;
+}
+
+/* ======= Challenge one: your age in days ======*/
+.container-1,
+.container-2,
+.container-3,
+.container-4{
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to top, rgb(206, 216, 219), rgba(0, 110, 255, 0.822));
+}
+
+.flex-box-container-1,
+.flex-box-container-2,
+.flex-box-pick-color,
+.flex-box-rps{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    border: 1px solid rgb(58, 58, 58);
+    border-radius: 5px;
+    align-items: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* ==== Challenge two: Cat Generator ==== */
+.btn-cat-generator{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.btn-cat-generator div{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid rgb(58, 58, 58);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.flex-box-container-2 img{
+    display: flex;
+    width: 20%;
+    height: 20%;
+    flex-wrap: wrap;
+    margin: 5px;
+    box-shadow: 8px 10px 50px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+/* ====== Challenge 3: Rock, Paper, Scissors ====== */
+.flex-box-rps img:hover{
+    border-radius: 10px;
+    box-shadow: 8px 10px 50px rgb(184, 54, 86);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}

@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript tut</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container-1"> <!-- ===== Challenge one: your age in days ====== -->
+            <h2>Challenge 1: Your Age in days</h2>
+            <div class="flex-box-container-1">
+                <div>
+                    <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+                </div>
+                <div>
+                    <button class="btn btn-danger" onclick="reset()">Reset</button>
+                </div>
+            </div>
+    
+            <div class="flex-box-container-1">
+                <div id="flex-box-result"></div>
+            </div>
+        </div> <!-- ====== End of challenge one ===== -->
+    
+        <!-- ==== Challenge two: Cat Generator ==== -->
+        <div class="container-2">
+            <h2>Challenge 2: Cat Generator</h2>
+            <div class="btn-cat-generator">
+                <div>
+                    <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+                </div>
+                <div>
+                    <button class="btn btn-danger" id="cat-generator" onclick="removeCat()">Remove Cat</button>
+                </div>
+            </div>
+    
+            <div class="flex-box-container-2" id="flex-cat-gen"></div>
+        </div><!-- ==== End of Cat Generator ==== -->
+    
+    
+        <!-- Challenge 3: Rock, Paper, Scissors -->
+        <div class="container-3">
+            <h2>Challenge 3: Rock, Paper, Scissors</h2>
+            <div class="flex-box-rps" id="flex-box-rps-div">
+                <img id="rock" src="blackjack_assets/images/rock.jpg" alt="" height="150px" width="150px" onclick="rpsGame(this)">
+                <img id="paper" src="blackjack_assets/images/paper.jpg" alt="" height="150px" width="150px" onclick="rpsGame(this)">
+                <img id="scissors" src="blackjack_assets/images/scissors.jpg" alt="" height="150px" width="150px" onclick="rpsGame(this)">
+            </div>
+        </div><!-- ==== End Rock, Paper, Scissors ==== -->
+    
+    
+        <!-- Challenge 4: Random colors -->
+        <div class="container-4">
+            <h2 id="change-my-color">Challenge 4: Changing colors of buttons</h2>
+            <div class="flex-box-pick-color">
+                <form action="">
+                    <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                        <option value="random">Random</option>
+                        <option value="green">Green</option>
+                        <option value="red">Red</option>
+                        <option value="reset">Reset</option>
+                    </select>
+                </form>
+                <button class="btn btn-primary">Facebook</button>
+                <button class="btn btn-danger">Youtube</button>
+                <button class="btn btn-warning">Snapchat</button>
+                <button class="btn btn-success">GitHub</button>
+    
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="js/challenge.js"></script>
+</body>
+</html>
